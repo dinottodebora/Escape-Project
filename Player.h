@@ -3,18 +3,19 @@
 
 class Room;
 
-class Player {
-    private:
-        int x;
-        int y;
-        Room* room;
+class Player
+{
+private:
+    int x;
+    int y;
+    Room *room;
 
-    public:
-        Player();
-        ~Player();
-        int getX();
-        int getY();
-        bool move(char direction, Room* room);
+public:
+    Player();
+    ~Player();
+    int getX();
+    int getY();
+    bool move(char direction, Room *room);
 };
 
 #endif
