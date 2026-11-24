@@ -2,6 +2,7 @@
 #define ROOM_H
 
 #include "Player.h"
+#include "Item.h"
 
 class Room
 {
@@ -16,6 +17,9 @@ public:
     ~Room();
     void draw();
     bool canMove(int x, int y);
+    char tileAt(int x,int y);
+    void placeItem(Item * i, int x, int y);
+    Item takeItem(int x, int y);
 };
 
 #endif

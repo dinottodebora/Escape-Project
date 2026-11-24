@@ -43,6 +43,12 @@ int main()
     Player player;
     Room room(columns, rows, &player);
 
+    Item key('k',"key");
+    room.placeItem(&key,2,2);
+
+    Item potion('p',"potion");
+    room.placeItem(&potion,4,4);
+
     bool isRunning = true;
 
     while (isRunning)
